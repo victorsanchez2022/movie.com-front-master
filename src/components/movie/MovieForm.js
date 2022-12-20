@@ -59,21 +59,21 @@ export const MovieForm = () => {
     <div className="container">
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicName">
-          <Form.Label>Nombres</Form.Label>
+          <Form.Label>Nombre Pelicula</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Nombres"
+            placeholder="Nombre Pelicula"
             name="name"
             onChange={handleChange}
           />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicLastName">
-          <Form.Label>Apellidos</Form.Label>
+          <Form.Label>Link del trailer</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Apellidos"
-            name="lastName"
+            placeholder="Link del Trailer"
+            name="trailerLink"
             onChange={handleChange}
           />
         </Form.Group>
@@ -92,21 +92,21 @@ export const MovieForm = () => {
         </Form.Select>
 
         <Form.Group className="mb-3" controlId="formBasicPhone">
-          <Form.Label>Celular</Form.Label>
+          <Form.Label>Descripcion</Form.Label>
           <Form.Control
-            type="number"
-            placeholder="Teléfono de contacto"
-            name="phone"
+            type="text"
+            placeholder="Descripcion"
+            name="description"
             onChange={handleChange}
           />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email</Form.Label>
+          <Form.Label>Link imagen</Form.Label>
           <Form.Control
-            type="email"
-            placeholder="Enter email"
-            name="email"
+            type="text"
+            placeholder="Link imagen"
+            name="imageLink"
             onChange={handleChange}
           />
           <Form.Text className="text-muted">

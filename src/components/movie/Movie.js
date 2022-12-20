@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Movie.css";
 import { API_URL, getToken, showMessage } from "../../util/Util";
+const baseUrl = "http://localhost:3000/";
 
 export const Movie = () => {
   const params = useParams();
@@ -130,19 +131,19 @@ export const Movie = () => {
           <div className="staff-list">
             {movie.staffList && movie.staffList.length > 0
               ? movie.staffList.map((staff, idx) => (
-                  <p key={idx}>
-                    {staff.name} {staff.lastName} ({staff.rol})
-                  </p>
-                ))
+                <p key={idx}>
+                  {staff.name} {staff.lastName} ({staff.rol})
+                </p>
+              ))
               : "No hay elenco definido para esta pelicula"}
           </div>
           <div className="category-list">
             {movie.categories && movie.categories.length > 0
               ? movie.categories.map((staff, idx) => (
-                  <p key={idx}>
-                    {staff.name} {staff.lastName} {staff.rol}
-                  </p>
-                ))
+                <p key={idx}>
+                  {staff.name} {staff.lastName} {staff.rol}
+                </p>
+              ))
               : "No hay categorías definidas"}
           </div>
           <div className="rate">
