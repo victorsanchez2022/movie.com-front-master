@@ -1,0 +1,9 @@
+.logo {
+    width: 200px;
+}
+
+.text-center {
+    justify-content: center;
+    color: red;
+    background-color: cornflowerblue;
+}
