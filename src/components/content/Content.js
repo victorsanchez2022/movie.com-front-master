@@ -42,7 +42,7 @@ export const Content = () => {
           staffList={movie.staffList}
           image={
             !movie.imageLink
-              ? "https://picsum.photos/seed/picsum/200/300"
+              ? "https://es.web.img3.acsta.net/medias/nmedia/18/86/91/41/19870073.jpg"
               : movie.imageLink
           }
           id={movie.id}

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Movie.css";
 import { API_URL, getToken, showMessage } from "../../util/Util";
-//const baseUrl = "http://localhost:3000/";
-const baseUrl = "http://localhost:8080/api/";
+const baseUrl = "http://localhost:3000/";
+//const baseUrl = "http://localhost:8080/api/";
 export const Movie = () => {
   const params = useParams();
   const [movieId, setMovieId] = useState("");
