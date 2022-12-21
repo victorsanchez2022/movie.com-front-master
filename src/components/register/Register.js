@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { API_URL } from "../../util/Util";
 
+
+
 export const Register = () => {
+  const navegate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -36,7 +39,14 @@ export const Register = () => {
     };
     let response = await fetch(API_URL + "client", requestData);
     response = await response.json();
+
+    //navegate("/movies")
+    navegate("/successful")
+
+
+
     return response;
+
   };
 
   return (
@@ -106,7 +116,7 @@ export const Register = () => {
         </Form.Group>
 
         <Button variant="primary" type="submit">
-          Submit
+          Registarse
         </Button>
       </Form>
       <Link to="/">Ya tengo una cuenta</Link>

@@ -79,7 +79,7 @@ export const Login = () => {
           </Form.Group>
 
           <Button variant="primary" type="submit">
-            Submit
+            Ingresar
           </Button>
         </Form>
         <Link to="/register">Registrarse</Link>

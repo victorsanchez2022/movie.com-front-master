@@ -12,6 +12,7 @@ import { MovieForm } from "./components/movie/MovieForm";
 import { NotFound } from "./components/notFound/NotFound";
 import { Register } from "./components/register/Register";
 import { Sidebar } from "./components/sidebar/Sidebar";
+import { Successful } from "./components/successful/Successful";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/movies" element={<Content />} />
           <Route path="/moviesRegister" element={<MovieForm />} />
           <Route path="/" element={<Login />} />
+          <Route path="/successful" element={<Successful />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
